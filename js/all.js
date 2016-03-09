@@ -11,6 +11,7 @@ $(document).ready(function(){
 	});
     $(".menu ul li").click(function(){
 	    $(".menu ul").hide();
+	    $(".menu").css('height','100%');
 	});
 	$('.certificate').colorbox();
 });

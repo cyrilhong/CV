@@ -254,6 +254,10 @@ progress {
   display: none;
 }
 
+.menu_fix {
+  height: 100%;
+}
+
 /* All good till now. Now we'll style the background */
 progress::-webkit-progress-bar {
   background: #CCCCCC;

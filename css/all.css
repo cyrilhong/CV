@@ -378,7 +378,7 @@ progress::-webkit-progress-value {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .banner {
-    margin-top: 68px;
+    margin-top: 48px;
   }
 
   .head {

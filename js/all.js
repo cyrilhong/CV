@@ -9,6 +9,10 @@ $(document).ready(function(){
     $(".mobile li").click(function(){
 	    $(".menu ul").toggle();
 	});
+    $(".menu ul li").click(function(){
+	    $(".menu ul").hide();
+	});
+	$('.certificate').colorbox();
 });
 
 $(document).ready(function () {

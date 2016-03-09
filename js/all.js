@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function(){
 	$('.menu ul').hide();
     $('a').click(function(){
 	    $('html, body').animate({

@@ -8,11 +8,10 @@ $(document).ready(function(){
 	});
     $(".mobile li").click(function(){
 	    $(".menu ul").toggle();
+	    $(".menu").toggleClass("menu_fix");
 	});
     $(".menu ul li").click(function(){
 	    $(".menu ul").hide();
-	});
-	$(".mobile li").click(function(){
 	    $(".menu").toggleClass("menu_fix");
 	});
 

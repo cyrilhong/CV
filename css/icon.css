@@ -1,0 +1,276 @@
+.icons-sprite, .icons-about, .icons-back, .icons-backx2, .icons-book-now-no-text, .icons-book-now-no-textx2, .icons-book-now, .icons-cancel-subscribe-btn-no-text, .icons-cancel-subscribe-btn, .icons-close-btn, .icons-closex2-btn, .icons-club, .icons-contact, .icons-contactx2, .icons-fb, .icons-fbx2, .icons-lang-en, .icons-lang-jp, .icons-lang-tc, .icons-link, .icons-logo, .icons-logo_small, .icons-mail, .icons-mailx2, .icons-meet, .icons-meetx2, .icons-menu-contact, .icons-menu-fb, .icons-menu-policy, .icons-menu-trans, .icons-parent-and-children, .icons-parent-and-childrenx2, .icons-phone, .icons-phonex2, .icons-rest, .icons-restx2, .icons-room, .icons-story, .icons-storyx2, .icons-subscribe-btn, .icons-wedding, .icons-weddingx2 {
+  background-image: url('../img/icons-saf6d94d180.png');
+  background-repeat: no-repeat;
+}
+
+.icons-about {
+  background-position: 0 0;
+}
+
+.icons-back {
+  background-position: 0 -54px;
+}
+.icons-back:hover, .icons-back.back-hover {
+  background-position: 0 -192px;
+}
+.icons-back:active, .icons-back.back-active {
+  background-position: 0 -123px;
+}
+
+.icons-backx2 {
+  background-position: 0 -261px;
+}
+
+.icons-book-now-no-text {
+  background-position: 0 -368px;
+}
+.icons-book-now-no-text:hover, .icons-book-now-no-text.book-now-no-text-hover {
+  background-position: 0 -554px;
+}
+.icons-book-now-no-text:active, .icons-book-now-no-text.book-now-no-text-active {
+  background-position: 0 -461px;
+}
+
+.icons-book-now-no-textx2 {
+  background-position: 0 -647px;
+}
+.icons-book-now-no-textx2:hover, .icons-book-now-no-textx2.book-now-no-textx2-hover {
+  background-position: 0 -957px;
+}
+.icons-book-now-no-textx2:active, .icons-book-now-no-textx2.book-now-no-textx2-active {
+  background-position: 0 -802px;
+}
+
+.icons-book-now {
+  background-position: 0 -1112px;
+}
+.icons-book-now:hover, .icons-book-now.book-now-hover {
+  background-position: 0 -1232px;
+}
+.icons-book-now:active, .icons-book-now.book-now-active {
+  background-position: 0 -1172px;
+}
+
+.icons-cancel-subscribe-btn-no-text {
+  background-position: 0 -1292px;
+}
+.icons-cancel-subscribe-btn-no-text:hover, .icons-cancel-subscribe-btn-no-text.cancel-subscribe-btn-no-text-hover {
+  background-position: 0 -1478px;
+}
+.icons-cancel-subscribe-btn-no-text:active, .icons-cancel-subscribe-btn-no-text.cancel-subscribe-btn-no-text-active {
+  background-position: 0 -1385px;
+}
+
+.icons-cancel-subscribe-btn {
+  background-position: 0 -1571px;
+}
+.icons-cancel-subscribe-btn:hover, .icons-cancel-subscribe-btn.cancel-subscribe-btn-hover {
+  background-position: 0 -1691px;
+}
+.icons-cancel-subscribe-btn:active, .icons-cancel-subscribe-btn.cancel-subscribe-btn-active {
+  background-position: 0 -1631px;
+}
+
+.icons-close-btn {
+  background-position: 0 -1751px;
+}
+.icons-close-btn:hover, .icons-close-btn.close-btn-hover {
+  background-position: 0 -1877px;
+}
+.icons-close-btn:active, .icons-close-btn.close-btn-active {
+  background-position: 0 -1814px;
+}
+
+.icons-closex2-btn {
+  background-position: 0 -1940px;
+}
+.icons-closex2-btn:hover, .icons-closex2-btn.closex2-btn-hover {
+  background-position: 0 -2138px;
+}
+.icons-closex2-btn:active, .icons-closex2-btn.closex2-btn-active {
+  background-position: 0 -2039px;
+}
+
+.icons-club {
+  background-position: 0 -2237px;
+}
+
+.icons-contact {
+  background-position: 0 -2287px;
+}
+
+.icons-contactx2 {
+  background-position: 0 -2346px;
+}
+
+.icons-fb {
+  background-position: 0 -2474px;
+}
+.icons-fb:hover, .icons-fb.fb-hover {
+  background-position: 0 -2618px;
+}
+.icons-fb:active, .icons-fb.fb-active {
+  background-position: 0 -2546px;
+}
+
+.icons-fbx2 {
+  background-position: 0 -2690px;
+}
+.icons-fbx2:hover, .icons-fbx2.fbx2-hover {
+  background-position: 0 -2909px;
+}
+.icons-fbx2:active, .icons-fbx2.fbx2-active {
+  background-position: 0 -2796px;
+}
+
+.icons-lang-en {
+  background-position: 0 -3015px;
+}
+
+.icons-lang-jp {
+  background-position: 0 -3061px;
+}
+
+.icons-lang-tc {
+  background-position: 0 -3110px;
+}
+
+.icons-link {
+  background-position: 0 -3156px;
+}
+.icons-link:hover, .icons-link.link-hover {
+  background-position: 0 -3294px;
+}
+.icons-link:active, .icons-link.link-active {
+  background-position: 0 -3225px;
+}
+
+.icons-logo {
+  background-position: 0 -3363px;
+}
+
+.icons-logo_small {
+  background-position: 0 -3743px;
+}
+
+.icons-mail {
+  background-position: 0 -3878px;
+}
+.icons-mail:hover, .icons-mail.mail-hover {
+  background-position: 0 -3988px;
+}
+.icons-mail:active, .icons-mail.mail-active {
+  background-position: 0 -3933px;
+}
+
+.icons-mailx2 {
+  background-position: 0 -4043px;
+}
+.icons-mailx2:hover, .icons-mailx2.mailx2-hover {
+  background-position: 0 -4201px;
+}
+.icons-mailx2:active, .icons-mailx2.mailx2-active {
+  background-position: 0 -4122px;
+}
+
+.icons-meet {
+  background-position: 0 -4279px;
+}
+
+.icons-meetx2 {
+  background-position: 0 -4343px;
+}
+
+.icons-menu-contact {
+  background-position: 0 -4499px;
+}
+.icons-menu-contact:hover, .icons-menu-contact.menu-contact-hover {
+  background-position: 0 -4623px;
+}
+.icons-menu-contact:active, .icons-menu-contact.menu-contact-active {
+  background-position: 0 -4561px;
+}
+
+.icons-menu-fb {
+  background-position: 0 -4685px;
+}
+.icons-menu-fb:hover, .icons-menu-fb.menu-fb-hover {
+  background-position: 0 -4809px;
+}
+.icons-menu-fb:active, .icons-menu-fb.menu-fb-active {
+  background-position: 0 -4747px;
+}
+
+.icons-menu-policy {
+  background-position: 0 -4871px;
+}
+.icons-menu-policy:hover, .icons-menu-policy.menu-policy-hover {
+  background-position: 0 -4995px;
+}
+.icons-menu-policy:active, .icons-menu-policy.menu-policy-active {
+  background-position: 0 -4933px;
+}
+
+.icons-menu-trans {
+  background-position: 0 -5057px;
+}
+.icons-menu-trans:hover, .icons-menu-trans.menu-trans-hover {
+  background-position: 0 -5181px;
+}
+.icons-menu-trans:active, .icons-menu-trans.menu-trans-active {
+  background-position: 0 -5119px;
+}
+
+.icons-parent-and-children {
+  background-position: 0 -5243px;
+}
+
+.icons-parent-and-childrenx2 {
+  background-position: 0 -5298px;
+}
+
+.icons-phone {
+  background-position: 0 -5419px;
+}
+
+.icons-phonex2 {
+  background-position: 0 -5468px;
+}
+
+.icons-rest {
+  background-position: 0 -5570px;
+}
+
+.icons-restx2 {
+  background-position: 0 -5626px;
+}
+
+.icons-room {
+  background-position: 0 -5753px;
+}
+
+.icons-story {
+  background-position: 0 -5802px;
+}
+
+.icons-storyx2 {
+  background-position: 0 -5860px;
+}
+
+.icons-subscribe-btn {
+  background-position: 0 -5996px;
+}
+.icons-subscribe-btn:hover, .icons-subscribe-btn.subscribe-btn-hover {
+  background-position: 0 -6116px;
+}
+.icons-subscribe-btn:active, .icons-subscribe-btn.subscribe-btn-active {
+  background-position: 0 -6056px;
+}
+
+.icons-wedding {
+  background-position: 0 -6176px;
+}
+
+.icons-weddingx2 {
+  background-position: 0 -6235px;
+}

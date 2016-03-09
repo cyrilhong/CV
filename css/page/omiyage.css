@@ -1,0 +1,43 @@
+.omiyage .list {
+  background-color: #E9EBEA;
+  color: black;
+}
+.omiyage .list li {
+  text-align: left;
+  margin-left: 35px;
+  line-height: 1.8;
+  font-size: 14px;
+  padding-right: 15px;
+}
+.omiyage .list .img_list {
+  text-align: left;
+  margin: 35px 0 15px 35px;
+}
+.omiyage .list .img_list img {
+  margin-right: 15px;
+}
+.omiyage .btn {
+  float: left;
+  margin-right: 15px;
+  background-color: #E9EBEA;
+  border: 1px solid black;
+  margin-top: 85px;
+}
+.omiyage .more {
+  float: right;
+  margin-top: 85px;
+  margin-right: 10px;
+}
+.omiyage .rooms_list p {
+  color: black;
+}
+.omiyage .rooms_pic:after {
+  content: "+";
+  text-align: center;
+  font-size: 26px;
+  color: black;
+  font-weight: 100;
+  width: 150px;
+  float: left;
+  margin-top: -44px;
+}

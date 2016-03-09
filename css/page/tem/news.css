@@ -1,0 +1,6 @@
+.news-page .page-container.list .row .bottom-wrap {
+  width: calc(97% - 21px);
+}
+.news-page .page-container.list .row .top-wrap {
+  padding-bottom: 10px;
+}

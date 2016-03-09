@@ -1,0 +1,15 @@
+.branch-event-meeting-page .page-container .row {
+  min-height: 400px;
+}
+.branch-event-meeting-page .page-container .row .page-main-content .top-wrap {
+  min-height: 90px;
+}
+
+.branch-event-meeting-detail-page .page-container .row .page-main-content {
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.branch-event-meeting-detail-page .page-container .row .page-main-content .top-wrap .together-me {
+  min-height: 130px;
+}

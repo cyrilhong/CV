@@ -1,0 +1,10 @@
+.branch-club-page .page-container .row {
+  min-height: 400px;
+}
+.branch-club-page .page-container .row .page-main-content .top-wrap {
+  min-height: 90px;
+}
+
+.branch-club-detail-page .page-container .row .page-main-content .top-wrap .together-me {
+  min-height: 130px;
+}

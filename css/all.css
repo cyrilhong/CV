@@ -1,0 +1,479 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #FFFF5C;
+  font-family: Helvetica Neue;
+  line-height: 1.2;
+}
+body div {
+  transition-property: margin, position, width, padding, height, display;
+  transition-duration: 0.5s;
+  transition-timing-function: linear, ease-in;
+}
+
+a {
+  outline: none;
+  color: #C5B400;
+  display: inherit;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 300;
+  color: #00BABA;
+  margin: 5px 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+p {
+  font-style: 14px;
+  font-weight: 200;
+}
+
+i {
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+section {
+  display: inline-block;
+  width: 270px;
+  max-width: 80%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #FFF;
+}
+
+.menu {
+  display: none;
+}
+
+.banner {
+  height: 230px;
+  width: 100%;
+  display: inline-block;
+  background-size: cover;
+  background: no-repeat fixed url(../img/banner.jpg);
+}
+
+.head_title {
+  margin: 130px 0 0 400px;
+  position: absolute;
+}
+
+.left {
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right {
+  width: 70%;
+  height: 100%;
+  margin: 0 -5px;
+  background-color: #FCFCFC;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.black {
+  color: black;
+}
+
+.head {
+  position: absolute;
+  margin: 20px 0 0 35px;
+  z-index: 1;
+}
+
+.shadow {
+  text-align: center;
+  position: relative;
+  margin-top: -30px;
+  z-index: -1;
+}
+.shadow img {
+  width: 250px;
+}
+
+.contact {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  padding: 40px 40px;
+}
+
+.profile, .skills {
+  padding: 0px 40px 40px 40px;
+}
+
+.experiences, .education, .course, .current_course, .interests {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.education .title, .course .title, .current_course .title {
+  margin: 10px 0;
+}
+
+.interests {
+  display: inline-block;
+}
+.interests .list {
+  width: 120px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 16px 10px 0;
+}
+.interests .list h5 {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.experiences {
+  margin-top: 40px;
+}
+.experiences .exp_list {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.experiences .exp_list .title {
+  white-space: none;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+.experiences .exp_list .title h5 {
+  display: block;
+}
+.experiences .exp_list .content {
+  display: inline-block;
+  width: 69%;
+  vertical-align: top;
+}
+.experiences .exp_list .content p {
+  margin: 0 20px 0 20px;
+}
+.experiences .exp_list a {
+  margin: 10px 10px 0 20px;
+}
+
+.actived {
+  background-color: #00BABA;
+  color: #C5B400;
+}
+
+progress {
+  width: 100%;
+  height: 8px;
+  display: block;
+  /* Important Thing */
+  -webkit-appearance: none;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.mobile {
+  display: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+  background: #CCCCCC;
+  border-radius: 50px;
+  padding: 2px;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+  border-radius: 50px;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  background: -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(255, 255, 255, 0.1) 33%, rgba(94, 247, 247, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(0, 186, 186, 0.25), rgba(0, 0, 0, 0.2)), -webkit-linear-gradient(left, #5EF7F7, #5EF7F7);
+  /* Looks great, now animating it */
+  background-size: 25px 14px, 100% 100%, 100% 100%;
+  -webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+/* Prefix-free was creating issues with the animation */
+@media screen and (min-width: 1024px) and (max-width: 1080px) {
+  .contact .fa-map-marker section {
+    width: 87%;
+  }
+
+  .experiences .exp_list .title {
+    width: 100%;
+    white-space: pre-line;
+  }
+  .experiences .exp_list .content {
+    width: 100%;
+  }
+  .experiences .exp_list .content p {
+    margin-left: 0;
+  }
+  .experiences .exp_list .content a {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .contact, .profile, .skills {
+    padding: 40px 40px 0px 40px;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    margin: 230px 25px 0 0;
+    width: auto;
+    background-color: #FFFF5C;
+  }
+  .menu ul a {
+    color: black;
+    text-decoration: none;
+  }
+  .menu ul a:hover {
+    color: #FFFF5C;
+  }
+  .menu ul a:hover li {
+    background-color: #00BABA;
+  }
+  .menu ul a:visited li {
+    background-color: #00BABA;
+  }
+  .menu ul li {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    width: 100px;
+    padding: 30px 15px;
+  }
+
+  .banner .head_title {
+    margin-left: 300px;
+  }
+
+  .contact, .profile, .skills, .exp_list, .education, .interests {
+    margin-right: 140px;
+  }
+
+  .contact h5 {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .contact .fa-map-marker section {
+    width: 87%;
+  }
+
+  .experiences .exp_list .title {
+    width: 100%;
+    white-space: pre-line;
+  }
+  .experiences .exp_list .content {
+    width: 100%;
+  }
+  .experiences .exp_list .content p {
+    margin-left: 0;
+  }
+  .experiences .exp_list .content a {
+    margin-left: 0;
+  }
+
+  .experiences, .education, .course, .current_course, .interests {
+    margin-left: 45px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .banner {
+    margin-top: 88px;
+  }
+
+  .head {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+  .head img {
+    width: 180px;
+  }
+
+  .shadow {
+    margin-top: -22px;
+  }
+
+  .head_title {
+    width: 100%;
+    margin: 250px 0 0 0;
+    text-align: center;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .contact h5 {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .contact .fa-map-marker section {
+    width: 87%;
+  }
+
+  .experiences .exp_list .title {
+    width: 100%;
+    white-space: pre-line;
+  }
+  .experiences .exp_list .content {
+    width: 100%;
+  }
+  .experiences .exp_list .content p {
+    margin-left: 0;
+  }
+  .experiences .exp_list .content a {
+    margin-left: 0;
+  }
+
+  .experiences, .education, .course, .current_course, .interests {
+    margin-left: 45px;
+  }
+
+  .menu {
+    z-index: 10;
+    display: block;
+    position: fixed;
+    right: 0;
+    margin: 0 0 0 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 92, 0.9);
+  }
+  .menu ul a {
+    color: black;
+    text-decoration: none;
+  }
+  .menu ul a:hover {
+    color: #FFFF5C;
+  }
+  .menu ul a:hover li {
+    background-color: #00BABA;
+  }
+  .menu ul a:visited li {
+    background-color: #00BABA;
+  }
+  .menu ul li {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .menu .mobile {
+    display: block;
+    background-color: black;
+    color: #FFFF5C;
+  }
+  .menu .mobile li {
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+    padding: 20px 0px;
+    list-style: none;
+  }
+  .menu .mobile li i {
+    margin-right: 20px;
+  }
+  .menu .mobile:hover {
+    color: #00BABA;
+  }
+}

@@ -1,0 +1,33 @@
+.branch-restaurant-page .page-container.list .page-main-content {
+  overflow: inherit;
+}
+.branch-restaurant-page .page-container.list .row {
+  min-height: 400px;
+  height: auto;
+}
+.branch-restaurant-page .page-container.list .row .top-wrap {
+  padding-bottom: 34px;
+}
+.branch-restaurant-page .page-container.list .row .top-wrap .together-me {
+  min-height: 130px;
+}
+.branch-restaurant-page .page-container.list .row .top-wrap .together-me .title {
+  width: calc(97% - 21px);
+  margin-bottom: 18px;
+}
+.branch-restaurant-page .page-container.list .row .bottom-wrap dl.phone-text {
+  margin-bottom: 0;
+}
+
+.branch-restaurant-detail-page .page-container .row .top-wrap {
+  padding-bottom: 34px;
+}
+.branch-restaurant-detail-page .page-container .row .top-wrap .together-me {
+  min-height: 130px;
+}
+.branch-restaurant-detail-page .page-container .row .top-wrap .together-me .title {
+  margin-bottom: 18px;
+}
+.branch-restaurant-detail-page .page-container .row .top-wrap .lakeshore-slide-thumb-wrap {
+  margin-top: 76px;
+}

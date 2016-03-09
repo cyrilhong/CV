@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "tc";
+  src: local("NotoSansCJKtc-Light"), url("../font/NotoSansCJK-tc/NotoSansCJKtc-Light.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "tc";
+  src: url("../font/NotoSansCJK-tc/NotoSansCJKtc-DemiLight.otf") format("opentype");
+  font-weight: lighter;
+}
+body {
+  font-family: "tc", "tc-Light", "微軟正黑體", "sans-serif";
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "jp";
+  src: url("/font/NotoSansCJK-jp/NotoSansCJKjp-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "jp-Light";
+  src: url("/font/NotoSansCJK-jp/NotoSansCJKjp-DemiLight.otf") format("opentype");
+}
+body {
+  font-family: "jp", "jp-Light", "微軟正黑體", "sans-serif";
+}

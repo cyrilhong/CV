@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>lakeshore</title>
+    <meta http-equiv="cleartype" content="on"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="stylesheet" href="/vendors/colorbox-master/example3/colorbox.css"/>
+    <link rel="stylesheet" href="/css/all.css"/>
+    <link rel="stylesheet" href="/css/icon.css"/>
+    <link rel="stylesheet" href="/css/page/transportation.css"/>
+    <script src="/vendors/jquery-1.11.3.min.js"></script>
+    <script src="/vendors/fastclick-master/lib/fastclick.js"> </script>
+    <script src="/vendors/slideout-0.1.11/dist/slideout.min.js"></script>
+    <script src="/vendors/colorbox-master/jquery.colorbox-min.js"></script>
+    <script src="/js/all.js"></script>
+    <script>console.info('welcone to lakeshore 交通');</script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
+    <script>
+      function initMap() {
+        var myLatLng = {lat: 24.7753192, lng: 120.9656954};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 13,
+        zoomControl: true,
+        zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.LARGE,
+        position: google.maps.ControlPosition.RIGHT_CENTER
+        },
+        scaleControl: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: true,
+        panControl: false,
+        styles: [{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"on"},{"gamma":"1.82"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"gamma":"1.96"},{"lightness":"-9"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"25"},{"gamma":"1.00"},{"saturation":"-100"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#ffaa00"},{"saturation":"-43"},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"},{"hue":"#ffaa00"},{"saturation":"-70"}]},{"featureType":"road.highway.controlled_access","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"on"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"saturation":"-100"},{"lightness":"40"},{"visibility":"off"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"gamma":"0.80"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"off"}]}]
+        });
+        var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'lakeshore'
+        });
+        }
+      
+      
+    </script>
+    <script type="text/javascript">
+      (function() {
+      var path = '//easy.myfonts.net/v2/js?sid=10019(font-family=Optima)&sid=218039(font-family=Optima+Pro+Roman)&sid=218040(font-family=Optima+Pro+Medium)&sid=218041(font-family=Optima+Pro+DemiBold)&key=s0fJPvESEd',
+      protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+      trial = document.createElement('script');
+      trial.type = 'text/javascript';
+      trial.async = true;
+      trial.src = protocol + path;
+      var head = document.getElementsByTagName("head")[0];
+      head.appendChild(trial);
+      })();
+    </script>
+    <link rel="stylesheet" href="/css/lang-en.css"/>
+  </head>
+  <body class="lakeshore">
+    <!-- - var menu_append_class = ( isBranch === true ? 'branch' : 'not-branch')-->
+    <!-- //-div(id="sub-menu-v2-mask" class="active")-->
+    <!--   //- 誤刪 這是 第二層 menu 的遮罩-->
+    <!-- nav#slideoutMenu(class="menu-mobile menu-#{menu_append_class} #{lang_font_normal_class}")-->
+    <!--   div.position-fix-->
+    <!--     .logo-wrap-->
+    <!--       a.menu-logo(href="/")-->
+    <!--         | LAKESHORE HOTEM-->
+    
+    <!--       if isBranch === true-->
+    <!--         .branch-name-->
+    <!--           | Hsinchu-->
+    <!--     nav.menu-navigation-->
+    <!--       if (isBranch === true)-->
+    <!--         //-是分管-->
+    <!--         ul.level-1-->
+    <!--           li-->
+    <!--             a(href="/branch/about.html", class="#{current_page==='branch-about' ? 'active' : ''}")-->
+    <!--               | About-->
+    <!--           li.has-sub-->
+    <!--             a(href="/branch/news.html", class="#{current_page==='news' ? 'active' : ''}")-->
+    <!--               | News-->
+    <!--             ul.level-2-->
+    <!--               li-->
+    <!--                 a.all(href="#")-->
+    <!--                   | All-->
+    <!--               li-->
+    <!--                 a(href="#")-->
+    <!--                   | Rates Table-->
+    <!--           li.has-sub-->
+    <!--             a(href="/branch/rooms.html", class="#{current_page==='rooms' || current_page==='branch-room-detail' ? 'active' : ''}") Rooms-->
+    <!--             ul.level-2-->
+    <!--               li-->
+    <!--                 a.all(href="/branch/rooms.html")-->
+    <!--                   | All-->
+    <!--               li-->
+    <!--                 a(href="/branch/rooms.html")-->
+    <!--                   | Rates Table MOMGGGG-->
+    
+    <!--           li-->
+    <!--             a(href="/branch/restaurant.html", class="#{current_page==='branch-restaurant' ? 'active' : ''}")-->
+    <!--               | Restaurant-->
+    <!--           li  -->
+    <!--             a(href="/branch/event_meeting.html", class="#{current_page==='branch-event-meeting' ? 'active' : ''}")-->
+    <!--               | Events & Meeting-->
+    <!--           li-->
+    <!--             a(href="/branch/club.html", class="#{current_page==='branch-club' ? 'active' : ''}")-->
+    <!--               | Health Club-->
+    <!--           li  -->
+    <!--             a(href="/branch/travel.html", class="#{current_page==='branch-travel' ? 'active' : ''}")-->
+    <!--               | Travel Services-->
+    <!--           li.has-sub-->
+    <!--             a(href="/branch/transportation.html", class="#{current_page==='branch-transportation' ? 'active' : ''}")-->
+    <!--               | Transportation Service-->
+    <!--             ul.level-2-->
+    <!--               li-->
+    <!--                 a.all(href="#")-->
+    <!--                   | All-->
+    <!--               li-->
+    <!--                 a(href="#")-->
+    <!--                   | Traffic Guide-->
+    <!--               li-->
+    <!--                 a(href="#")-->
+    <!--                   | Driving-->
+    <!--               li-->
+    <!--                 a(href="#")-->
+    <!--                   | State Highway One-->
+    <!--               li-->
+    <!--                 a(href="#")-->
+    <!--                   | State Highway Three-->
+    <!--               li-->
+    <!--                 a(href="#")-->
+    <!--                   | High Speed Rail-->
+    <!--               li-->
+    <!--                 a(href="#")-->
+    <!--                   | Taiwan Railway-->
+    <!--           li  -->
+    <!--             a(href="/branch/contact.html", class="#{current_page==='branch-contact' ? 'active' : ''}")-->
+    <!--               | Contact Us-->
+    
+    
+    
+    
+    <!--       else-->
+    <!--         //- 集團頁面  (反正不是分管就是這種!)-->
+    <!--         ul.level-1-->
+    <!--           li-->
+    <!--             a.change-bg-placeholder(href="/bloc/story.html", class="#{current_page==='story' ? 'active' : ''}", data-background="/img/home-banner-demo.png")-->
+    <!--               | Story-->
+    <!--           li-->
+    <!--             a.change-bg-placeholder(href="/bloc/news.html", class="#{current_page==='news' ? 'active' : ''}", data-background="/img/home-banner-demo.png")-->
+    <!--               | News-->
+    <!--           li  -->
+    <!--             a.change-bg-placeholder(href="/branch/index.html", class="#{current_page==='branch-index' ? 'active' : ''}", data-background="http://placehold.it/1280x800/333333")-->
+    <!--               | Hsinchu-->
+    <!--           li  -->
+    <!--             a.change-bg-placeholder(href="/branch/index.html", class="#{current_page==='branch-index' ? 'active' : ''}", data-background="http://placehold.it/1280x800/666666")-->
+    <!--               | Metropolis-->
+    <!--           li  -->
+    <!--             a.change-bg-placeholder(href="/branch/index.html", class="#{current_page==='branch-index' ? 'active' : ''}", data-background="http://placehold.it/1280x800/999999")-->
+    <!--               | Hualien-->
+    <!--           li -->
+    <!--             a.change-bg-placeholder(href="/branch/index.html", class="#{current_page==='branch-index' ? 'active' : ''}", data-background="http://placehold.it/1280x800/dddddd")-->
+    <!--               | Su-ao-->
+    
+    <!--       section.menu-infos-->
+    <!--         ul.level-1-->
+    <!--           li.has-sub.clearfix-->
+    <!--             a.btn.btn-book-now(href="#", title="book now")-->
+    <!--               | BOOK NOW-->
+    <!--             ul.level-2-->
+    <!--               li-->
+    <!--                 a(href="#", title="Hsinchu 分管")-->
+    <!--                   | Hsinchu-->
+    <!--               li-->
+    <!--                 a(href="#", title="Metropolis 分管")-->
+    <!--                   | Metropolis-->
+    <!--               li-->
+    <!--                 a(href="#", title="Hualien 分管")-->
+    <!--                   | Hualien-->
+    <!--               li-->
+    <!--                 a(href="#", title="Su-ao 分管")-->
+    <!--                   | Su-ao-->
+    <!--       div.info-social-groups.clearfix-->
+    <!--         div.spacingfix-->
+    <!--           a.icons-menu-fb(href="")-->
+    <!--             | facebook-->
+    <!--           a.open-iframe.icons-menu-contact(href="/iframe/customer_opinions.html")-->
+    <!--             | contact-->
+    <!--           a.open-privacy-iframe.icons-menu-policy(href="/iframe/privacy_statement.html")-->
+    <!--             | policy-->
+    <!--           a.icons-menu-trans(href="#")-->
+    <!--             | language-->
+    <!--           ul.lang-switcher.clearfix-->
+    <!--             li-->
+    <!--               a.btn-lang.btn-lang-tc(href="#")-->
+    <!--             li-->
+    <!--               a.btn-lang.btn-lang-en(href="#")-->
+    <!--             li-->
+    <!--               a.btn-lang.btn-lang-jp(href="#")-->
+    <!--     section.menu-footer-->
+    <!--       //- 分管才有 電話-->
+    <!--       if  isBranch === true-->
+    <!--         div.phone-->
+    <!--           i.icons.icons-phone-->
+    <!--           span.text-->
+    <!--             | 886 3250 3188#5132-->
+    <!--       div.copyright-->
+    <!--         | &copy; Lakeshore Hotel -->
+    <!--         sm TM-->
+    <!--         | 2015-->
+    
+    
+    <div id="container" class="branch-transportation-page">
+      <button class="hamburger hamburger-effect"><span>toggle menu</span></button>
+      <section class="page-container list">
+        <div class="row row-map">
+          <div class="col-8 col-link col-map">
+            <div id="map">
+            </div>
+          </div>
+          <div class="col-4 bg-normal page-main-content pull-right">
+            <div>
+              <div class="top-wrap">
+                <div class="together-me clearfix">
+                  <div class="title clearfix">
+                    <h2>Traffic Guide</h2>
+                  </div>
+                  <div class="room-type-text"></div>
+                  <div class="div top-wrap-right-content"><a href="#" title="link"><i class="btn-link"></i></a></div>
+                </div>
+              </div>
+              <div class="bottom-wrap">
+                <div class="content-text">(Zhongshan high) at 99 kilometers south (100 km at the north), Hsinchu System Interchange adapter to "Chunan / Taichung" direction National Highway No. 3, III 103 kilometers to the next State Road Hsinchu Interchange "bischofia javanica export" to Hsinchu direction. After the plane straight road at interchange to the first traffic light, turn right to Chaiqiao road, follow "Qingcaohu" or "Lakeshore Hotel" indicators along for about five minutes, then Ming Wu to Family Mart convenience store, turn right away..</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          
+          
+          <div style="background-image: url(http://placehold.it/620x400)" href="/branch/restaurant_details.html" class="col-8"></div>
+          <div class="col-4 bg-normal page-main-content pull-right">
+            <div>
+              <div class="top-wrap">
+                <div class="together-me clearfix">
+                  <div class="title clearfix">
+                    <h2 class="sourcehansans-tc-light">Traffic Guide
+                    </h2>
+                  </div>
+                  <div class="lakeshore-subtitle sourcehansans-tc-extralight">State Highway One</div>
+                  <div class="room-type-text sourcehansans-tc-extralight"></div>
+                  <div class="div top-wrap-right-content "><a href="#" title="link"><i class="btn-link"></i></a>
+                  </div>
+                </div>
+                <div class="lakeshore-trans-list sourcehansans-tc-extralight">
+                  <ul>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bottom-wrap">
+                <div class="content-text lang_font_normal_class">(Zhongshan high) at 99 kilometers south (100 km at the north), Hsinchu System Interchange adapter to &quot;Chunan / Taichung&quot; direction National Highway No. 3, III 103 kilometers to the next State Road Hsinchu Interchange &quot;bischofia javanica export&quot; to Hsinchu direction. After the plane straight road at interchange to the first traffic light, turn right to Chaiqiao road, follow &quot;Qingcaohu&quot; or &quot;Lakeshore Hotel&quot; indicators along for about five minutes, then Ming Wu to Family Mart convenience store, turn right away..
+                </div>
+                <dl class="phone-text sourcehansans-tc-extralight">
+                  <dt>
+                    <div class="icon icons-phone"></div>Service Hotline 
+                  </dt>
+                  <dd>886 3520 3188#5132</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          
+          
+          <div style="background-image: url(http://placehold.it/620x400)" href="/branch/restaurant_details.html" class="col-8"></div>
+          <div class="col-4 bg-normal page-main-content pull-right">
+            <div>
+              <div class="top-wrap">
+                <div class="together-me clearfix">
+                  <div class="title clearfix">
+                    <h2 class="sourcehansans-tc-light">Traffic Guide
+                    </h2>
+                  </div>
+                  <div class="lakeshore-subtitle sourcehansans-tc-extralight">State Highway One</div>
+                  <div class="room-type-text sourcehansans-tc-extralight"></div>
+                  <div class="div top-wrap-right-content "><a href="#" title="link"><i class="btn-link"></i></a>
+                  </div>
+                </div>
+                <div class="lakeshore-trans-list sourcehansans-tc-extralight">
+                  <ul>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bottom-wrap">
+                <div class="content-text lang_font_normal_class">(Zhongshan high) at 99 kilometers south (100 km at the north), Hsinchu System Interchange adapter to &quot;Chunan / Taichung&quot; direction National Highway No. 3, III 103 kilometers to the next State Road Hsinchu Interchange &quot;bischofia javanica export&quot; to Hsinchu direction. After the plane straight road at interchange to the first traffic light, turn right to Chaiqiao road, follow &quot;Qingcaohu&quot; or &quot;Lakeshore Hotel&quot; indicators along for about five minutes, then Ming Wu to Family Mart convenience store, turn right away..
+                </div>
+                <dl class="phone-text sourcehansans-tc-extralight">
+                  <dt>
+                    <div class="icon icons-phone"></div>Service Hotline 
+                  </dt>
+                  <dd>886 3520 3188#5132</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          
+          
+          <div style="background-image: url(http://placehold.it/620x400)" href="/branch/restaurant_details.html" class="col-8"></div>
+          <div class="col-4 bg-normal page-main-content pull-right">
+            <div>
+              <div class="top-wrap">
+                <div class="together-me clearfix">
+                  <div class="title clearfix">
+                    <h2 class="sourcehansans-tc-light">Traffic Guide
+                    </h2>
+                  </div>
+                  <div class="lakeshore-subtitle sourcehansans-tc-extralight">State Highway One</div>
+                  <div class="room-type-text sourcehansans-tc-extralight"></div>
+                  <div class="div top-wrap-right-content "><a href="#" title="link"><i class="btn-link"></i></a>
+                  </div>
+                </div>
+                <div class="lakeshore-trans-list sourcehansans-tc-extralight">
+                  <ul>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bottom-wrap">
+                <div class="content-text lang_font_normal_class">(Zhongshan high) at 99 kilometers south (100 km at the north), Hsinchu System Interchange adapter to &quot;Chunan / Taichung&quot; direction National Highway No. 3, III 103 kilometers to the next State Road Hsinchu Interchange &quot;bischofia javanica export&quot; to Hsinchu direction. After the plane straight road at interchange to the first traffic light, turn right to Chaiqiao road, follow &quot;Qingcaohu&quot; or &quot;Lakeshore Hotel&quot; indicators along for about five minutes, then Ming Wu to Family Mart convenience store, turn right away..
+                </div>
+                <dl class="phone-text sourcehansans-tc-extralight">
+                  <dt>
+                    <div class="icon icons-phone"></div>Service Hotline 
+                  </dt>
+                  <dd>886 3520 3188#5132</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          
+          
+          <div style="background-image: url(http://placehold.it/620x400)" href="/branch/restaurant_details.html" class="col-8"></div>
+          <div class="col-4 bg-normal page-main-content pull-right">
+            <div>
+              <div class="top-wrap">
+                <div class="together-me clearfix">
+                  <div class="title clearfix">
+                    <h2 class="sourcehansans-tc-light">Traffic Guide
+                    </h2>
+                  </div>
+                  <div class="lakeshore-subtitle sourcehansans-tc-extralight">State Highway One</div>
+                  <div class="room-type-text sourcehansans-tc-extralight"></div>
+                  <div class="div top-wrap-right-content "><a href="#" title="link"><i class="btn-link"></i></a>
+                  </div>
+                </div>
+                <div class="lakeshore-trans-list sourcehansans-tc-extralight">
+                  <ul>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bottom-wrap">
+                <div class="content-text lang_font_normal_class">(Zhongshan high) at 99 kilometers south (100 km at the north), Hsinchu System Interchange adapter to &quot;Chunan / Taichung&quot; direction National Highway No. 3, III 103 kilometers to the next State Road Hsinchu Interchange &quot;bischofia javanica export&quot; to Hsinchu direction. After the plane straight road at interchange to the first traffic light, turn right to Chaiqiao road, follow &quot;Qingcaohu&quot; or &quot;Lakeshore Hotel&quot; indicators along for about five minutes, then Ming Wu to Family Mart convenience store, turn right away..
+                </div>
+                <dl class="phone-text sourcehansans-tc-extralight">
+                  <dt>
+                    <div class="icon icons-phone"></div>Service Hotline 
+                  </dt>
+                  <dd>886 3520 3188#5132</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          
+          
+          <div style="background-image: url(http://placehold.it/620x400)" href="/branch/restaurant_details.html" class="col-8"></div>
+          <div class="col-4 bg-normal page-main-content pull-right">
+            <div>
+              <div class="top-wrap">
+                <div class="together-me clearfix">
+                  <div class="title clearfix">
+                    <h2 class="sourcehansans-tc-light">Traffic Guide
+                    </h2>
+                  </div>
+                  <div class="lakeshore-subtitle sourcehansans-tc-extralight">State Highway One</div>
+                  <div class="room-type-text sourcehansans-tc-extralight"></div>
+                  <div class="div top-wrap-right-content "><a href="#" title="link"><i class="btn-link"></i></a>
+                  </div>
+                </div>
+                <div class="lakeshore-trans-list sourcehansans-tc-extralight">
+                  <ul>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                    <li>Hsinchu Station to the hotel</li>
+                    <li>Saturday afternoon 14: 00,16: 00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bottom-wrap">
+                <div class="content-text lang_font_normal_class">(Zhongshan high) at 99 kilometers south (100 km at the north), Hsinchu System Interchange adapter to &quot;Chunan / Taichung&quot; direction National Highway No. 3, III 103 kilometers to the next State Road Hsinchu Interchange &quot;bischofia javanica export&quot; to Hsinchu direction. After the plane straight road at interchange to the first traffic light, turn right to Chaiqiao road, follow &quot;Qingcaohu&quot; or &quot;Lakeshore Hotel&quot; indicators along for about five minutes, then Ming Wu to Family Mart convenience store, turn right away..
+                </div>
+                <dl class="phone-text sourcehansans-tc-extralight">
+                  <dt>
+                    <div class="icon icons-phone"></div>Service Hotline 
+                  </dt>
+                  <dd>886 3520 3188#5132</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pager">
+          <ul class="pagination">
+            <li class="disabled"><span><</span></li>
+            <li class="active"><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#" rel="next">></a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

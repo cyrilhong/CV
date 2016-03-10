@@ -178,6 +178,19 @@ section {
   margin-bottom: 10px;
   padding: 40px 40px 0 40px;
 }
+.contact ul {
+  font-size: 36px;
+  margin-top: 10px;
+}
+.contact ul li {
+  display: inline-block;
+}
+.contact ul li a {
+  color: #000;
+}
+.contact ul li i {
+  display: inline-block;
+}
 
 .profile, .skills {
   padding: 0px 40px 0px 40px;

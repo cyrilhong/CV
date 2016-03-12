@@ -57,8 +57,8 @@ body {
   line-height: 1.2;
 }
 body div {
-  transition-property: margin, position, width, padding, height, display;
-  transition-duration: 0.5s;
+  transition-property: margin, position, width, padding, height, opacity, display;
+  transition-duration: 0.3s;
   transition-timing-function: linear, ease-in;
 }
 
@@ -282,9 +282,46 @@ progress {
 .project ul li a {
   width: 45%;
   margin-right: 5%;
+  text-decoration: none;
 }
 .project ul li a img {
   width: 100%;
+}
+.project ul li a:hover .cover {
+  opacity: 1;
+}
+.project .porject_img {
+  position: relative;
+}
+.project i {
+  position: absolute;
+  background-color: rgba(0, 186, 186, 0.89);
+  top: 0;
+  right: 0;
+  color: #FFFF5C;
+  text-align: center;
+  padding: 10px;
+  z-index: 5;
+}
+.project .cover {
+  opacity: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 186, 186, 0.89);
+}
+.project .cover h1 {
+  margin: 10px 20px;
+  border-bottom: 1px solid #fff;
+}
+.project .cover p {
+  padding: 10px 20px;
+}
+.project .cover .tag {
+  font-weight: bold;
+  padding: 0 20px;
 }
 
 /* All good till now. Now we'll style the background */

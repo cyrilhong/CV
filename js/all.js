@@ -14,6 +14,9 @@ $(document).ready(function(){
 	    $(".menu ul").hide();
 	    $(".menu").toggleClass("menu_fix");
 	});
+ //    $(".pro_act").click(function(){
+	//     $(".menu ul").hide();
+	// });
 
 	$('.certificate').colorbox();
 });

@@ -315,6 +315,8 @@ progress {
 .project .cover h1 {
   margin: 10px 20px;
   border-bottom: 1px solid #fff;
+  font-size: 32px;
+  line-height: 1;
 }
 .project .cover p {
   padding: 10px 20px;
